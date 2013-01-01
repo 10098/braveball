@@ -23,15 +23,24 @@ Credits
 --------
 
 Programming and graphics: 
+
 Grigory `10098' Javadyan
 
+
 Music: 
+
 "Skogens Djur 004" by Daniel Johansson
+
 "The Moon is on Fire" by __twc (http://soundcloud.com/twc-3 ) 
+
 "Stage One" by Benjamin Burnes (http://soundcloud.com/abstraction )
 
+
 Sound FX:
+
 http://bfxr.net
 
+
 Producer:
+
 Fred Fuchs ;-)
