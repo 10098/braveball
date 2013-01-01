@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0DAA2C12-CCF4-44F7-A37D-3917803C6C4C}</ProjectGuid>
+    <RootNamespace>braveball</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(ProjectDir)windows\include;$(ProjectDir);$(ProjectDir)windows\include\SDL</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(ProjectDir)windows\lib32</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(ProjectDir)windows\include;$(ProjectDir);$(ProjectDir)windows\include\SDL</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(ProjectDir)windows\lib32</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_MBCS;%(PreprocessorDefinitions);_WIN32_WINNT = 0x0501</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);opengl32.lib;glew32.lib;DevIL.lib;SDL.lib;SDLmain.lib;SDL_ttf.lib;bass.lib</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WIN32_WINNT = 0x0501</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);opengl32.lib;SDL.lib;SDLmain.lib;glew32.lib;DevIL.lib;SDL_ttf.lib;bass.lib</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="game\debug_console.cpp" />
+    <ClCompile Include="game\engine.cpp" />
+    <ClCompile Include="game\game_object.cpp" />
+    <ClCompile Include="game\hud.cpp" />
+    <ClCompile Include="game\objects\exit_portal.cpp" />
+    <ClCompile Include="game\objects\heart.cpp" />
+    <ClCompile Include="game\objects\meany.cpp" />
+    <ClCompile Include="game\objects\mean_flyer.cpp" />
+    <ClCompile Include="game\objects\mean_jumper.cpp" />
+    <ClCompile Include="game\objects\mean_walker.cpp" />
+    <ClCompile Include="game\objects\platform.cpp" />
+    <ClCompile Include="game\objects\player.cpp" />
+    <ClCompile Include="game\objects\threat.cpp" />
+    <ClCompile Include="game\objects\youngling.cpp" />
+    <ClCompile Include="game\objects\youngling_eater.cpp" />
+    <ClCompile Include="game\platform_generator.cpp" />
+    <ClCompile Include="game\scenes\end_scene.cpp" />
+    <ClCompile Include="game\scenes\help_scene.cpp" />
+    <ClCompile Include="game\scenes\play_scene.cpp" />
+    <ClCompile Include="game\scenes\titlecard_scene.cpp" />
+    <ClCompile Include="graphics\animation.cpp" />
+    <ClCompile Include="graphics\canvas.cpp" />
+    <ClCompile Include="graphics\font.cpp" />
+    <ClCompile Include="graphics\graphics.cpp" />
+    <ClCompile Include="graphics\image.cpp" />
+    <ClCompile Include="graphics\retro_screen.cpp" />
+    <ClCompile Include="graphics\screen_context.cpp" />
+    <ClCompile Include="graphics\sprite_batch.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sound\sound.cpp" />
+    <ClCompile Include="sound\sound_system.cpp" />
+    <ClCompile Include="util\animation_collection.cpp" />
+    <ClCompile Include="util\camera.cpp" />
+    <ClCompile Include="util\clock.cpp" />
+    <ClCompile Include="util\color_scale.cpp" />
+    <ClCompile Include="util\resource_file.cpp" />
+    <ClCompile Include="util\resource_manager.cpp" />
+    <ClCompile Include="util\throttle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game\debug_console.h" />
+    <ClInclude Include="game\engine.h" />
+    <ClInclude Include="game\game_object.h" />
+    <ClInclude Include="game\hud.h" />
+    <ClInclude Include="game\objects\exit_portal.h" />
+    <ClInclude Include="game\objects\meany.h" />
+    <ClInclude Include="game\objects\mean_flyer.h" />
+    <ClInclude Include="game\objects\mean_jumper.h" />
+    <ClInclude Include="game\objects\threat.h" />
+    <ClInclude Include="game\objects\youngling_eater.h" />
+    <ClInclude Include="game\platform_generator.h" />
+    <ClInclude Include="game\scene.h" />
+    <ClInclude Include="game\objects\heart.h" />
+    <ClInclude Include="game\objects\mean_walker.h" />
+    <ClInclude Include="game\objects\platform.h" />
+    <ClInclude Include="game\objects\player.h" />
+    <ClInclude Include="game\objects\youngling.h" />
+    <ClInclude Include="game\scenes\end_scene.h" />
+    <ClInclude Include="game\scenes\error_scene.h" />
+    <ClInclude Include="game\scenes\help_scene.h" />
+    <ClInclude Include="game\scenes\play_scene.h" />
+    <ClInclude Include="game\scenes\play_scene_fwd.h" />
+    <ClInclude Include="game\scenes\titlecard_scene.h" />
+    <ClInclude Include="graphics\animation.h" />
+    <ClInclude Include="graphics\canvas.h" />
+    <ClInclude Include="graphics\context.h" />
+    <ClInclude Include="graphics\font.h" />
+    <ClInclude Include="graphics\graphics.h" />
+    <ClInclude Include="graphics\image.h" />
+    <ClInclude Include="graphics\misc.h" />
+    <ClInclude Include="graphics\retro_screen.h" />
+    <ClInclude Include="graphics\screen_context.h" />
+    <ClInclude Include="graphics\sprite_batch.h" />
+    <ClInclude Include="sound\sound.h" />
+    <ClInclude Include="sound\sound_system.h" />
+    <ClInclude Include="util\animation_collection.h" />
+    <ClInclude Include="util\camera.h" />
+    <ClInclude Include="util\clock.h" />
+    <ClInclude Include="util\color_scale.h" />
+    <ClInclude Include="util\default_resource_data.h" />
+    <ClInclude Include="util\resource_file.h" />
+    <ClInclude Include="util\resource_manager.h" />
+    <ClInclude Include="util\throttle.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

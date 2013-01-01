@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\graphics">
+      <UniqueIdentifier>{e96dfc74-51d5-40cf-81bc-9b9792b58913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{e429a528-02cb-426d-a0b1-165a68307320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{db158ea5-8775-4a9c-878d-75893950fe4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{b8b7ceed-1866-479d-a66e-cfab37805e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game">
+      <UniqueIdentifier>{786d7478-30b4-4212-975c-e5ceb8f89474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\objects">
+      <UniqueIdentifier>{c5db2532-f43e-4e3d-b687-24875e1e82e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\objects">
+      <UniqueIdentifier>{ec6926c7-ece2-4137-8065-b03188b302e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game\scenes">
+      <UniqueIdentifier>{ab145ec3-d93e-49c2-8807-449fa9c563c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\scenes">
+      <UniqueIdentifier>{5daf2df3-8112-4a8b-9d23-a9d0b76045d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sound">
+      <UniqueIdentifier>{296580af-daac-47ce-835d-3035354762c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sound">
+      <UniqueIdentifier>{87614b99-68f9-4467-9bee-41512148e346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{532ce725-e900-4a23-ab4b-f1a89e23d985}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\animation.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\canvas.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\graphics.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\image.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\sprite_batch.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="util\clock.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="game\engine.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="util\resource_manager.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\player.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\platform.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\youngling.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="util\camera.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\mean_walker.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\heart.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\font.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\screen_context.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="util\resource_file.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\throttle.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\retro_screen.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="game\hud.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\platform_generator.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\scenes\help_scene.cpp">
+      <Filter>Source Files\game\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\scenes\play_scene.cpp">
+      <Filter>Source Files\game\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\scenes\titlecard_scene.cpp">
+      <Filter>Source Files\game\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\sound_system.cpp">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\sound.cpp">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\threat.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="util\color_scale.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\youngling_eater.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="util\animation_collection.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\mean_jumper.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\mean_flyer.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\meany.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\exit_portal.cpp">
+      <Filter>Source Files\game\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\scenes\end_scene.cpp">
+      <Filter>Source Files\game\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="game\debug_console.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="game\game_object.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphics\animation.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\canvas.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\context.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\graphics.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\image.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\sprite_batch.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\screen_context.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="util\clock.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="game\engine.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\misc.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="util\resource_manager.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="game\game_object.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\player.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\platform.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\youngling.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="util\camera.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\mean_walker.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\font.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\heart.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="util\resource_file.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\default_resource_data.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\throttle.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="game\scene.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\retro_screen.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="game\hud.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\platform_generator.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\scenes\error_scene.h">
+      <Filter>Header Files\game\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\scenes\help_scene.h">
+      <Filter>Header Files\game\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\scenes\play_scene.h">
+      <Filter>Header Files\game\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\scenes\titlecard_scene.h">
+      <Filter>Header Files\game\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\sound_system.h">
+      <Filter>Header Files\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\sound.h">
+      <Filter>Header Files\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\threat.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="util\color_scale.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\youngling_eater.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="util\animation_collection.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="game\scenes\play_scene_fwd.h">
+      <Filter>Header Files\game\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\mean_jumper.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\mean_flyer.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\meany.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\exit_portal.h">
+      <Filter>Header Files\game\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\scenes\end_scene.h">
+      <Filter>Header Files\game\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="game\debug_console.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

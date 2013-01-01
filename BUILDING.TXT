@@ -1,0 +1,9 @@
+You'll need Visual Studio >= 2010 to build this game.
+To build a fresh copy of the game:
+
+	* Go to tools/res_file_builder and open the sln file
+	* Build the solution from Visual Studio
+	* Copy the resulting executable to the project's root folder
+	* From the command line, cd to the project's root folder and run res_file_builder -Rres/ -Oresources.res
+	* Open the game's solution file and build it
+	* Before running from VS for the first time, copy the dll files from windows/lib32 to Debug/
