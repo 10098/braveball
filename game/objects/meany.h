@@ -22,7 +22,7 @@ namespace game
    protected:
       util::AnimationCollection m_anims;
       bool m_dead;
-      int m_opacity;
+      uint8_t m_opacity;
       int m_minX;
       int m_maxX;
       int m_direction;

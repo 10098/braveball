@@ -25,12 +25,10 @@ namespace game
          m_textLines.push_back(std::shared_ptr<graphics::Image>(f.renderString(lines[i])));
    }
 
-   void HelpScene::update(game::Engine& ctx)
-   {
+   void HelpScene::update(game::Engine& )
+   {}
 
-   }
-
-   void HelpScene::focus(game::Engine& ctx, bool enter)
+   void HelpScene::focus(game::Engine&, bool enter)
    {
       if(enter)
       {
@@ -48,7 +46,7 @@ namespace game
    void HelpScene::draw(game::Engine& ctx)
    {
       ctx.graphics().clear();
-      for(int i = 0; i < m_textLines.size(); ++i)
+      for(size_t i = 0; i < m_textLines.size(); ++i)
       {
          graphics::Image* img = m_textLines[i].get();
          img -> draw(m_screen.width() / 2 - img -> width() / 2, (m_screen.height()/2 - m_textLines.size() * (img->height() + 7) / 2) + i * (img -> height() + 7));

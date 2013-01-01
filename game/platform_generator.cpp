@@ -15,7 +15,7 @@ namespace game
                                         unsigned min_h_gap,  unsigned max_h_gap,
                                         unsigned min_v_gap,  unsigned max_v_gap,
                                         int default_y, 
-                                        int max_x):
+                                        unsigned max_x):
       m_minBlockLength(min_blocks), 
       m_maxBlockLength(max_blocks),
       m_minHorizontalGap(min_h_gap), 
@@ -46,7 +46,7 @@ namespace game
       const int LastPlatformWidth = 6; // Width of the very last platform (containing the Exit Portal), in blocks
 
       // Determine the X coordinate from which to start generating platforms
-      int start_from = platforms_list.empty() ? 0 : platforms_list.back() -> x() + platforms_list.back() -> width() + m_minHorizontalGap;
+      unsigned start_from = platforms_list.empty() ? 0 : platforms_list.back() -> x() + platforms_list.back() -> width() + m_minHorizontalGap;
 
       // This will be the Y coordinate for the next platform. Initialize to the same y coordinate as the last platform in the list,
       // or the default Y coordinate if the list is empty.

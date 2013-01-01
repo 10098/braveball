@@ -19,7 +19,7 @@ namespace game
       virtual void draw(graphics::SpriteBatch&);
 
    private:
-      virtual void collide(GameObject& o){}
+      virtual void collide(GameObject&){}
 
       graphics::Animation m_exitSign;
       graphics::Animation m_portal;

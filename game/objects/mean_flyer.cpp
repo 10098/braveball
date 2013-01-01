@@ -26,7 +26,7 @@ namespace game
          }
 
          setX(x() + m_direction);
-         setY(m_baseY + 10 * sin(x() / 10.0));
+         setY(m_baseY + 10 * static_cast<int>(sin(x() / 10.0)));
       }
    }
 }

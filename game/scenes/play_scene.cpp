@@ -265,7 +265,7 @@ namespace game
 
       // Find the platform that the player is on ("current platform")
       auto current_platform = m_platforms.begin();
-      for(int i = 0; i < m_platforms.size() - 1 && (*current_platform) -> x() + (*current_platform) -> width() < m_player -> x(); ++i,++current_platform);
+      for(size_t i = 0; i < m_platforms.size() - 1 && (*current_platform) -> x() + (*current_platform) -> width() < m_player -> x(); ++i,++current_platform);
 
       // By now, current_platform should be one of the following (unless it's m_platforms.end()):
       // 1. the platform that the player is standing on

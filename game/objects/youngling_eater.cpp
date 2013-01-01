@@ -13,9 +13,9 @@ namespace game
       addTag("eater");
    }
 
-   void YounglingEater::draw(graphics::SpriteBatch& b)
+   void YounglingEater::draw(graphics::SpriteBatch&)
    {
-      // b.add(x(), y(), graphics::AlignedQuad(0, 0, width(), height()), graphics::Color(0xff, 0x00, 0x00));
+      // There was some drawing code here for debugging purposes but it was removed later
    }
 
 }

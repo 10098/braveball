@@ -44,7 +44,7 @@ namespace game
          collideEater(o);
    }
 
-   void Youngling::collidePlayer(GameObject& o)
+   void Youngling::collidePlayer(GameObject&)
    {
       if(!m_saved)
       {
@@ -53,7 +53,7 @@ namespace game
       }
    }
 
-   void Youngling::collideEater(GameObject& o)
+   void Youngling::collideEater(GameObject&)
    {
       if(!m_saved)
          addTag("dead_youngling");

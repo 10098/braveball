@@ -31,7 +31,7 @@ namespace game
                         unsigned min_h_gap,  unsigned max_h_gap,
                         unsigned min_v_gap,  unsigned max_v_gap,
                         int default_y, 
-                        int max_x);
+                        unsigned max_x);
       
       /// Generate a new set of platforms
       ///
@@ -62,7 +62,7 @@ namespace game
       int m_minVerticalGap;   /// Minimal vertical gap
       int m_maxVerticalGap;   /// Maximal vertical gap
       int m_defaultYCoord;    /// Default Y coordinate
-      int m_maxX;             /// Edge of the world
+      unsigned m_maxX;        /// Edge of the world
       bool m_exitPortalGenerated; /// Indicates if an exit portal has already been generated
    };
 }

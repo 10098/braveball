@@ -45,7 +45,7 @@ namespace game
       iterator objectsEnd(){ return m_objects.end(); }
 
    private:
-      virtual void collide(GameObject& o){}
+      virtual void collide(GameObject&){}
 
       static const int m_blockSize = 16; // Block width and height (in pixels)
 

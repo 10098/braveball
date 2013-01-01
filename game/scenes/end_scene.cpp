@@ -18,7 +18,7 @@ namespace game
    {
    }
 
-   void EndScene::focus(Engine& ctx, bool enter)
+   void EndScene::focus(Engine&, bool enter)
    {
       if(enter)
       {
