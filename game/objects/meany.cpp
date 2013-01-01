@@ -48,8 +48,10 @@ namespace game
       }
       else if(m_fadeOutThrottle(e.clock().ticks()) && m_opacity > 0)
       {
-         m_opacity -= 10;
-         if(m_opacity < 0) m_opacity = 0;
+         if(m_opacity < 10) 
+            m_opacity = 0;
+         else 
+            m_opacity -= 10;
       }
    }
 }
