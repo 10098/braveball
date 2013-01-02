@@ -1,4 +1,7 @@
-You'll need Visual Studio >= 2010 to build this game.
+You'll need Visual Studio >= 2010 and the Boost C++ libraries to build this game (grab pre-built Windows version here: http://boost.teeks99.com/ ).
+
+Make sure that boost headers are in the include path and the boost libraries are in the library path!
+
 To build a fresh copy of the game:
 
 	* Go to tools/res_file_builder and open the sln file
